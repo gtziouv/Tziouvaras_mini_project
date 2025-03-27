@@ -1,58 +1,49 @@
-# Tziouvaras_mini_project
-Mini-Project for Programming Class 27/03/25
-# MiniProject: Regression Analysis
+# Mini-Project: Data Analysis and Regression
 
-## Overview
-This project performs a regression analysis on fatigue levels, reaction time, and other variables. It includes data loading, visualization, regression modeling, and unit testing.
+## Project Overview
+This project analyzes data from `Rural_66.xlsx`, performs data visualizations, and runs an OLS regression model to investigate relationships between variables.
 
-## Installation
-Ensure you have Python installed. You can create an environment using `conda`:
+## Setup Instructions
 
+### 1. Clone the Repository
 ```sh
-conda create --name miniproject_env python=3.8
-conda activate miniproject_env
+git clone <your-repository-url>
+cd <repository-folder>
 ```
 
-Install required dependencies:
-
+### 2. Create a Virtual Environment (Optional but Recommended)
 ```sh
-pip install pandas numpy matplotlib seaborn statsmodels openpyxl
+python -m venv venv
+source venv/bin/activate  # On Windows, use: venv\Scripts\activate
 ```
 
-## Running the Project
-1. Place your dataset (`.xlsx` file) in the project folder.
-2. Run the Jupyter Notebook (`miniproject_tziouvaras.ipynb`).
-3. Ensure `miniproject.py` is in the same directory.
-
-To run tests:
-
+### 3. Install Dependencies
 ```sh
-python -m unittest test_miniproject.py
+pip install -r requirements.txt
 ```
 
-## Project Structure
-```
-miniproject/
-│── miniproject.py          # Main script with functions
-│── miniproject_tziouvaras.ipynb  # Jupyter Notebook for analysis
-│── test_miniproject.py     # Unit tests
-│── data.xlsx               # Example dataset (not committed)
-│── README.md               # Project documentation
-```
-
-## Version Control
-Ensure you are using Git:
+### 4. Run the Analysis
+Ensure `Rural_66.xlsx` is in the project directory, then execute:
 ```sh
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin <your-repo-url>
-git push -u origin main
+python miniproject.py
 ```
 
-## Notes
-- The regression results are interpreted in the notebook.
-- The project considers weaknesses and potential improvements.
+## Project Components
+- `miniproject.py`: The main script containing functions for data loading, visualization, and regression analysis.
+- `requirements.txt`: Lists required dependencies.
+- `README.md`: This file with setup instructions.
 
-Enjoy your analysis! 
+## Expected Outputs
+- Histograms for key variables.
+- Regression results with variable significance and model relevance.
+
+## Future Improvements
+- Additional statistical tests.
+- More advanced visualizations.
+- Consideration of potential biases in the model.
+
+---
+
+
+
 
