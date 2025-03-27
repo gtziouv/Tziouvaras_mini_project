@@ -1,0 +1,10 @@
+#Requirements
+pandas
+numpy
+seaborn
+matplotlib
+statsmodels
+scipy
+openpyxl
+scikit-learn
+
