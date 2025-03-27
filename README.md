@@ -25,11 +25,11 @@ pip install -r requirements.txt
 ### 4. Run the Analysis
 Ensure `Rural_66.xlsx` is in the project directory, then execute:
 ```sh
-python miniproject.py
+python code_miniproject.ipynb
 ```
 
 ## Project Components
-- `miniproject.py`: The main script containing functions for data loading, visualization, and regression analysis.
+- `code_miniproject.ipynb`: The main script containing functions for data loading, visualization, and regression analysis.
 - `requirements.txt`: Lists required dependencies.
 - `README.md`: This file with setup instructions.
 
