@@ -54,5 +54,5 @@ git push -u origin main
 - The regression results are interpreted in the notebook.
 - The project considers weaknesses and potential improvements.
 
-Enjoy your analysis! 🚀
+Enjoy your analysis! 
 
