@@ -1,49 +1,46 @@
-# Mini-Project: Data Analysis and Regression
+# Driving Fatigue Analysis
+
+This project investigates the relationship between driving fatigue and reaction times. Using a dataset that includes fatigue levels, hours of wakefulness, volume of work, and other driving-related metrics, the goal is to analyze how these variables influence a driver’s reaction time. The project performs statistical analysis through regression models and provides insights on the most significant predictors of reaction time while driving.
 
 ## Project Overview
-This project analyzes data from `Rural_66.xlsx`, performs data visualizations, and runs an OLS regression model to investigate relationships between variables.
 
-## Setup Instructions
+Driving fatigue is a significant factor that can lead to reduced reaction times, increasing the risk of accidents on the road. In this project, we aim to identify the impact of various factors, such as fatigue levels and hours awake, on reaction time using Ordinary Least Squares (OLS) regression analysis. The insights gained could potentially contribute to road safety measures and help in understanding the critical elements that lead to poor reaction times in drivers.
 
-### 1. Clone the Repository
-```sh
-git clone <your-repository-url>
-cd <repository-folder>
-```
+## Installation
 
-### 2. Create a Virtual Environment (Optional but Recommended)
-```sh
-python -m venv venv
-source venv/bin/activate  # On Windows, use: venv\Scripts\activate
-```
+To set up the environment, you'll need to install the necessary dependencies. First, ensure you have Python installed. Then, create a virtual environment and install the required packages.
 
-### 3. Install Dependencies
-```sh
-pip install -r requirements.txt
-```
+1. Create a virtual environment (optional but recommended):
 
-### 4. Run the Analysis
-Ensure `Rural_66.xlsx` is in the project directory, then execute:
-```sh
-python code_miniproject.ipynb
-```
+    ```bash
+    python -m venv venv
+    ```
 
-## Project Components
-- `code_miniproject.ipynb`: The main script containing functions for data loading, visualization, and regression analysis.
-- `requirements.txt`: Lists required dependencies.
-- `README.md`: This file with setup instructions.
+2. Activate the virtual environment:
 
-## Expected Outputs
-- Histograms for key variables.
-- Regression results with variable significance and model relevance.
+    - On Windows:
+      ```bash
+      venv\Scripts\activate
+      ```
+    - On macOS/Linux:
+      ```bash
+      source venv/bin/activate
+      ```
 
-## Future Improvements
-- Additional statistical tests.
-- More advanced visualizations.
-- Consideration of potential biases in the model.
+3. Install the dependencies using `requirements.txt`:
 
----
+    ```bash
+    pip install -r requirements.txt
+    ```
 
+## Usage
+
+Once you have the dependencies installed, you can run the project. The script will load the data, create visualizations, perform regression analysis, and print out the regression summary, followed by an interpretation of the results.
+
+To run the analysis:
+
+```bash
+jupyter lab code_miniproject.ipynb
 
 
 
